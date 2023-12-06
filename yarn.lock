@@ -119,9 +119,9 @@
     tslib "^2.6.0"
 
 "@razorpay/i18nify@^1.1.0":
-  version "1.1.0"
-  resolved "https://npm.pkg.github.com/download/@razorpay/i18nify/1.1.0/dbe0754bdc378a901740674e1312557a95a09ae1#dbe0754bdc378a901740674e1312557a95a09ae1"
-  integrity sha512-w1dotjo7ACgC0FT5c3Lsv6W2mrWuNkHfApObOIvRS8PDLmGk3WRNsVZN+gO1dmOygXg4KOG8aYAnJO4ehZ4YrA==
+  version "1.2.1"
+  resolved "https://npm.pkg.github.com/download/@razorpay/i18nify/1.2.1/ff0fec8244c023d3cfe36aa29ce337df199cf156#ff0fec8244c023d3cfe36aa29ce337df199cf156"
+  integrity sha512-+72BZxUmgSDXIjkxWIHw1NmBY6z155F8nl1O0JhHSkK0mUjN2I3miQzzNsI6iTCzk59ci+n9zypp9gK7FRHDlA==
 
 "@rollup/plugin-commonjs@^25.0.7":
   version "25.0.7"
