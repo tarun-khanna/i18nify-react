@@ -1,6 +1,6 @@
-import * as React from "react";
-import { createContext, useContext, useState } from "react";
-import { setState, getState } from "@razorpay/i18nify";
+import * as React from 'react';
+import { createContext, useContext, useState } from 'react';
+import { setState, getState } from '@razorpay/i18nify';
 
 interface ContextValueType {
   i18nState?: ReturnType<typeof getState>;
@@ -56,7 +56,7 @@ export const I18nProvider = ({ children }: { children: JSX.Element }) => {
 export const useI18nContext = (): ContextValueType => {
   const context = useContext(I18nContext);
   if (!context) {
-    throw new Error("useI18nContext must be used within a I18nProvider");
+    throw new Error('useI18nContext must be used within a I18nProvider');
   }
   return context;
 };
