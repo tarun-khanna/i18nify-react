@@ -1,5 +1,11 @@
 # @razorpay/i18nify-react
 
+## 1.0.3
+
+### Patch Changes
+
+- 96dbb3b: [fix]: permission denied bugfix for github registry
+
 ## 1.0.2
 
 ### Patch Changes
