@@ -1662,7 +1662,7 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@razorpay/i18nify-react@../../":
+"@tarun/i18nify-react@../../":
   version "1.0.0"
 
 "@rollup/plugin-babel@^5.2.0":
