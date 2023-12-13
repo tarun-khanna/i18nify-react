@@ -11,7 +11,7 @@ const fs = require('fs');
 
 const NPMRC_PATH = './.npmrc';
 
-const npmRcContent = `@tarun:registry=https://npm.pkg.github.com/
+const npmRcContent = `registry=https://npm.pkg.github.com/
 //npm.pkg.github.com/:always-auth=true
 //npm.pkg.github.com/:_authToken=\${GITHUB_TOKEN}
 `;
