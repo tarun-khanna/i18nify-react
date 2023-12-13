@@ -1,10 +1,10 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import { useI18nContext } from "@tarun/i18nify-react";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { useI18nContext } from 'i18nify-react';
 
 function App() {
-  console.log("🚀 ~ useI18nContext:", useI18nContext());
+  console.log('🚀 ~ useI18nContext:', useI18nContext());
   return (
     <div className="App">
       <header className="App-header">
