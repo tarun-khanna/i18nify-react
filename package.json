@@ -1,6 +1,6 @@
 {
   "name": "@tarun/i18nify-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "tarun khanna <tarunrajkhanna@gmail.com>",
   "main": "lib/cjs/index.js",
