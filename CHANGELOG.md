@@ -1,4 +1,4 @@
-# @tarun/i18nify-react
+# @tarun-khanna/i18nify-react
 
 ## 1.0.1
 
