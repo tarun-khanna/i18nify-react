@@ -17,14 +17,18 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - name: Use Node v20
+        uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 20.3.1
           registry-url: https://npm.pkg.github.com/
-      - run: yarn install
-      - run: |
-          echo "@tarun-khanna:registry=https://npm.pkg.github.com" >> .npmrc
+      - name: Install dependencies
+        run: yarn
+      - name: Publish to github registry
+        run: |
+          echo "@razorpay:registry=https://npm.pkg.github.com" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.CI_TOKEN }}" >> .npmrc
+      - run: yarn release
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.CI_TOKEN}}

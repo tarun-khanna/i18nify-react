@@ -1,6 +1,6 @@
 {
   "name": "@tarun-khanna/i18nify-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "tarun khanna <tarunrajkhanna@gmail.com>",
   "main": "lib/cjs/index.js",
@@ -24,7 +24,7 @@
     "build": "yarn clean && rollup -c",
     "prepare": "husky install && yarn build",
     "lint-staged": "lint-staged -c .lintstagedrc.json",
-    "release": "node ./scripts/generateGitHubRegistryNpmrc.js && npm publish --access public",
+    "release": "node ./scripts/generateGitHubRegistryNpmrc.js",
     "publish-npm": "node ./scripts/publishToNpm.js"
   },
   "publishConfig": {

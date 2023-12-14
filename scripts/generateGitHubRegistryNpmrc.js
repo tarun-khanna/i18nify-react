@@ -11,9 +11,9 @@ const fs = require('fs');
 
 const NPMRC_PATH = './.npmrc';
 
-const npmRcContent = `registry=https://npm.pkg.github.com/
+const npmRcContent = `@tarun-khanna:registry=https://npm.pkg.github.com/
 //npm.pkg.github.com/:always-auth=true
-//npm.pkg.github.com/:_authToken=\${GITHUB_TOKEN}
+//npm.pkg.github.com/:_authToken=\${GITHUB_ACCESS_TOKEN}
 `;
 
 fs.writeFileSync(NPMRC_PATH, npmRcContent);
