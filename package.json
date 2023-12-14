@@ -24,11 +24,8 @@
     "build": "yarn clean && rollup -c",
     "prepare": "husky install && yarn build",
     "lint-staged": "lint-staged -c .lintstagedrc.json",
-    "release": "node ./scripts/generateGitHubRegistryNpmrc.js",
+    "release": "node ./scripts/generateGitHubRegistryNpmrc.js && changeset publish",
     "publish-npm": "node ./scripts/publishToNpm.js"
-  },
-  "publishConfig": {
-    "@tarun-khanna:registry": "https://npm.pkg.github.com"
   },
   "license": "MIT",
   "dependencies": {},

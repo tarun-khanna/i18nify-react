@@ -1,4 +1,4 @@
-name: i18nify-react Release
+name: i18nify React Release
 
 on:
   workflow_dispatch:
@@ -21,14 +21,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20.3.1
-          registry-url: https://npm.pkg.github.com/
       - name: Install dependencies
         run: yarn
-      - name: Publish to github registry
-        run: |
-          echo "@razorpay:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.CI_TOKEN }}" >> .npmrc
-      - run: yarn release
-      - run: npm publish
+      - name: Create Release Pull Request & Publish packages
+        id: changesets
+        uses: changesets/action@v1
+        if: github.event_name != 'workflow_dispatch' # only run on master merges
         env:
-          NODE_AUTH_TOKEN: ${{secrets.CI_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
+        with:
+          publish: yarn release
+          commit: 'build(i18nify-react): update version'
+          title: 'build(i18nify-react): update version'
