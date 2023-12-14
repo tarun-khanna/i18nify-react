@@ -27,6 +27,9 @@
     "release": "node ./scripts/generateGitHubRegistryNpmrc.js && npm publish --access public",
     "publish-npm": "node ./scripts/publishToNpm.js"
   },
+  "publishConfig": {
+    "@tarun-khanna:registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "dependencies": {},
   "peerDependencies": {
